@@ -34,8 +34,8 @@ while (i < amigos.length) { // Enquanto i for menor que o número de amigos
 }
 
 function sortearAmigo() {
-    if (amigos.length === 0) {
-        alert("Não há amigos na lista para sortear.");
+    if (amigos.length < 2) {
+        alert("Não há amigos suficientes! Adicione mais nomes.");
     } else {
         // Gera um número aleatório de 0 até amigos.length - 1
         let indiceSorteado = Math.floor(Math.random() * amigos.length);
